@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="classApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular classes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div ng-controller="myController">
+        <input placeholder="Enter your color" type="text" ng-model="textType">
+        <div ng-class="textType">Look. Im words!</div>
+    </div>
+    <div ng-class="truth ? 'small' : 'big'">CHANGER</div>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
